@@ -23,7 +23,7 @@ html{
 }
 section{
     padding: 4% 6%;
-    background-image: url('images/bg.avif');
+    /* background-image: url('images/bg.avif'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -76,10 +76,11 @@ section{
     color: #555;
     padding: 1rem;
     padding-top: 5rem;
+    font-weight: 100;
 }
 .heading i{
     color: #76a713;
-    font-size: 2rem;
+    font-size: 2em;
 }
 header{
     position: fixed;
@@ -161,7 +162,7 @@ header .fa-bars{
     flex: 1 1 40rem;
     padding: 2rem;
 }
-.about .row .content h3{
+.about .row .content h2{
     font-size: 3rem;
     color: #000;
 }
@@ -203,22 +204,31 @@ header .fa-bars{
     font-size: 1.7rem;
 }
 .services{
-    background-image: url('images/image.png');
+    /* background-image: url('images/image.png'); */
+    background-color: #D9EDBF;
     min-height: 100vh;
 }
 .services .heading{
     color: #fff;
+    font-weight: 900;
 }
 .services .box-container{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    
+}
+.span{
+    margin-top:5 rem;
+    font-weight: bold;
 }
 .services .box-container .box{
-    background: rgba(255, 255, 255, 0.03);
+    background-image: url('images/image.png');
+    /* background: rgba(255, 255, 255, 0.03); */
     border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(11px);
     box-shadow: 0 20px 50px rgba(40, 113, 85, 0.4);
@@ -229,6 +239,7 @@ header .fa-bars{
     margin: 2rem;
     cursor: pointer;
     line-height: 1.5;
+    
 }
 .services .box-container .box i{
     color: var(--green);
@@ -238,9 +249,10 @@ header .fa-bars{
 .services .box-container .box h3{
     color: #fff;
     font-size: 2rem;
+    font-weight: 900;
 }
 .services .box-container .box p{
-    color: lightgray;
+    color: rgb(10, 8, 8);
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 2rem;
@@ -342,7 +354,8 @@ header .fa-bars{
 }
 
 .footer{
-    background-image: url('images/image.png');
+    /* background-image: url('images/image.png'); */
+    /* background-color: #D9EDBF; */
 
 }
 .footer .box-container{
@@ -405,21 +418,9 @@ header .fa-bars{
 }
 .footer .credit span {
     color: var(--green);
+    margin:0 0;
+    padding:0%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width:768px){
     html{
@@ -452,8 +453,8 @@ header .fa-bars{
         color: #000;
     }
     header .nav-toggle{
-        top: 6rem;
-        opacity: 1;
+        top: 1 rem;
+        opacity: 0;
     }
     .home .content h1{
         font-size: 5rem;

@@ -6,6 +6,8 @@
     <title>Register Page</title>
 
     <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
 </head>
 <body>
@@ -14,13 +16,56 @@
         <p class="alert"></p>
     </div>
 
-    <div class="form">
-        <h1 class="heading">Register</h1>
-        <input type="text" placeholder="name" autocomplete="off" class="name" required>
-        <input type="email" placeholder="email" autocomplete="off" class="email" required>
-        <input type="password" placeholder="password" autocomplete="off" class="password" required>
-        <button class="submit-btn">register</button>
-        <a href="./login.html" class="link">already have an account ? log in here</a>
+    <img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.png">
+		</div>
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.png">
+				<h2 class="title">Register Yourself</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+                   <div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                            <h5>email</h5>
+                            <input type="email" class="email">
+                    </div>
+                 </div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+                <div class="input-div pass">
+                    <div class="i"> 
+                         <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                         <h5>Re-enter Password</h5>
+                         <input type="password" class="input">
+                 </div>
+              </div>
+            	<!-- <a href="#">Forgot Password?</a> -->
+            	<input type="submit" class="btn" value="register">
+                <a href="./login.html" class="link">already have an account ? log in here</a>
+            </form>
+        </div>  
     </div>
 
     <script src="js/form.js"></script>

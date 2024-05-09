@@ -1,28 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-
-    <link rel="stylesheet" href="css/form.css">
-
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-    <div class="alert-box">
-        <p class="alert"></p>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.png">
+		</div>
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.png">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<!-- <a href="#">Forgot Password?</a> -->
+            	<input type="submit" class="btn" value="Login">
+                <a href="./register.html" class="link">You Don't have an account ? Register in here</a>
+        
+            </form>
+        </div>  
     </div>
-
-    <div class="form">
-        <h1 class="heading">login</h1>
-        <input type="email" placeholder="email" autocomplete="off" class="email" required>
-        <input type="password" placeholder="password" autocomplete="off" class="password" required>
-        <button class="submit-btn">log in</button>
-        <a href="./register.html" class="link" > don't have an account? Register one</a>
-    </div>
-
-    <script src="js/form.js"></script>
-    
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
