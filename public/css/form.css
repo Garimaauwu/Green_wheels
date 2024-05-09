@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #627254;
 }
 
 *:focus{
@@ -16,7 +17,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../img/bg.png');
+    /* background: url('../images/bg.jpg'); */
     background-size: cover;
     background-position: center;
     font-family: 'roboto', sans-serif;
