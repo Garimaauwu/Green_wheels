@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <link rel="stylesheet" type="text/css" href="/form.css">
+</head>
+<body>
+
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <form action="/auth/register" method="POST" class="form">
+        <h1 class="heading">Register</h1>
+        <input type="text" placeholder="name" autocomplete="off" class="name" required name="name">
+        <input type="email" placeholder="email" autocomplete="off" class="email" required name="email">
+        <input type="password" placeholder="password"  id="password" required name="password">
+        <input type="password" placeholder="Confirm-password"  id="passwordConfirm" required name="passwordConfirm">
+        <button class="submit-btn">register</button>
+        <a href="/login" class="link">already have an account ? log in here</a>
+    </form> 
+    {{#if message}}
+            <h4 class="alert alert-danger mt4">{{message}}</h4>
+    {{/if}}
+    
+</body>
+</html>

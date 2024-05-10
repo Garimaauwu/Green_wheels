@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+</head>
+<body>
+
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <img class="wave" src="/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="/bg.png">
+		</div>
+		<div class="login-content">
+			<form action="/auth/register">
+				<img src="/avatar.png">
+				<h2 class="title">Register Yourself</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input" id="name" name="name">
+           		   </div>
+           		</div>
+                   <div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                            <h5>email</h5>
+                            <input type="email" class="email" id="email" name="email">
+                    </div>
+                 </div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" id="password" name="password">
+            	   </div>
+            	</div>
+                <div class="input-div pass">
+                    <div class="i"> 
+                         <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                         <h5>Re-enter Password</h5>
+                         <input type="password" class="input" id="confirmpassword" name="confirmpassword">
+                 </div>
+              </div>
+            	<!-- <a href="#">Forgot Password?</a> -->
+            	<input type="submit" class="btn" value="register">
+                <a href="/login" class="link">already have an account ? log in here</a>
+            </form>
+        </div>  
+    </div>
+
+    <script src="js/form.js"></script>
+    
+</body>
+</html>

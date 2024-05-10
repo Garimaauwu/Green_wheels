@@ -1,0 +1,29 @@
+{
+  "name": "nodemysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "snigdh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "google": "^2.1.0",
+    "hbs": "^4.2.0",
+    "http-error": "^0.0.6",
+    "jsonwebtoken": "^9.0.2",
+    "math": "^0.0.3",
+    "mysql": "^2.18.1",
+    "node-html-parser": "^6.1.13",
+    "nodemon": "^3.1.0",
+    "qs": "^6.12.1"
+  }
+}

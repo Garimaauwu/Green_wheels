@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/form.css">
+</head>
+<body>
+
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <form action="/auth/login" method="POST" class="form" >
+        <h1 class="heading">login</h1>
+        <input type="email" placeholder="email" class="form-control" id="email" name="email">
+        <input type="password" placeholder="Password" class="form-control" id="password" name="password">
+        <button class="submit-btn">log in</button>
+        <a href="/register" class="link" > don't have an account? Register one</a>
+    </form>
+</body>
+</html>
